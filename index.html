@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Weather App</h2>
+            <button id="themeToggle">🌙</button>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">🔍</button>
+        </div>
+
+        <div class="weather-card">
+            <h3 id="cityName">City Name</h3>
+            <img id="weatherIcon" src="" alt="Weather Icon">
+            <p id="temperature">-- °C</p>
+            <p id="weather">Weather: --</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="windSpeed">Wind Speed: -- m/s</p>
+            <button id="toggleTemp" onclick="toggleTemperature()">Switch to °F</button>
+        </div>
+
+        <p id="error-message" class="error"></p>
+        <p>Design by-Navneet Upadhyay</p>
+    </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
